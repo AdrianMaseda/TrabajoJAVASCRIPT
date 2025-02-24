@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticias>
+    <noticia>
+        <titulo>Lanzamiento del Nuevo Producto</titulo>
+        <fecha>2025-02-11</fecha>
+        <descripcion>Nuestra empresa ha lanzado un nuevo producto innovador que cambiará el mercado.</descripcion>
+        <imagen>noticia1.jpg</imagen>
+    </noticia>
+    <noticia>
+        <titulo>Expansión Internacional</titulo>
+        <fecha>2025-01-25</fecha>
+        <descripcion>Anunciamos nuestra expansión a nuevos mercados internacionales este año.</descripcion>
+        <imagen>noticia2.jpg</imagen>
+    </noticia>
+    
+</noticias>
+
