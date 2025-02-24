@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /*  Función para que se muestre un porcentaje de progresión en una barra debajo de las imágenes
         de la galería.*/
-    function actualizarBarra()  {
+    function actualizarBarra() {
         const barra = document.getElementById("barra-progreso");
         const totalSlides = document.querySelectorAll(".swiper-slide").length;
         const indice = swiper.realIndex + 1;
         const progreso = (indice / totalSlides) * 100;
         barra.style.width = `${progreso}%`;
     }
-
-    actualizarBarraProgreso();
+    
+    actualizarBarra();
 
 });
 
