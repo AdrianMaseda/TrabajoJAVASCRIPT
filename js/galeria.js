@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
             disableOnInteraction: false, //Sigue operando aunque estemos, por ejemplo, en hover
         },
         on: {
-            init: function () {
-                actualizarBarra(this);
+            init: function (swiper) {
+                actualizarBarra(swiper);
             },
-            slideChange: function () {
-                actualizarBarra(this);
+            slideChange: function (swiper) {
+                actualizarBarra(swiper);
             }
         }
     });
@@ -23,7 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
     /*  Función para que se muestre un porcentaje de progresión en una barra debajo de las imágenes
         de la galería.*/
     function actualizarBarra(swiper) {
+
+        if (!swiper || !swiper.slides) return;
+
         const barra = document.getElementById("barra-progreso");
+        if (!barra) return;
+
         const totalSlides = swiper.slides.length - 2;
         const indice = swiper.realIndex + 1;
         const progreso = (indice / totalSlides) * 100;
