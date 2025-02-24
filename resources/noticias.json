@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Lanzamiento del Nuevo Producto",
+        "fecha": "2025-02-11",
+        "descripcion": "Nuestra empresa ha lanzado un nuevo producto innovador que cambiará el mercado.",
+        "imagen": "resources/noticia1.jpg"
+    },
+    {
+        "titulo": "Expansión Internacional",
+        "fecha": "2025-01-25",
+        "descripcion": "Anunciamos nuestra expansión a nuevos mercados internacionales este año.",
+        "imagen": "resources/noticia2.jpg"
+    },
+    {
+        "titulo": "Premio a la Innovación",
+        "fecha": "2024-12-15",
+        "descripcion": "Hemos sido galardonados con el premio a la innovación por nuestro último desarrollo.",
+        "imagen": "resources/noticia3.jpg"
+    }
+]

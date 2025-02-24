@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Novatours</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <!--Script de navegación-->
+    <script src="../js/nav.js"></script>
+    <script src="../js/galeria.js"></script>
+    <!--Script de animación de imagen (librería Swiper) y css-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <!--Bloque de menú y logo-->
+    <div class="header-container">
+        <header>
+            <h1>Novatours</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Bloque de galería de imágenes formato swiper-->
+    <main>
+        <section id="galeria">
+            <h2>Nuestra Galería</h2>
+            <br><h3>Estos son algunos de los destinos a los que podrías viajar con nosotros:</h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                   <div class="swiper-slide"><img src="../resources/img1.jpg" alt="Budapest"></div>
+                    <div class="swiper-slide"><img src="../resources/img2.jpg" alt="Amsterdam"></div>
+                    <div class="swiper-slide"><img src="../resources/img3.jpg" alt="Brujas"></div>
+                    <div class="swiper-slide"><img src="../resources/img4.jpg" alt="Paris"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!--Pie de página-->
+    <footer>
+        <p>&copy; 2025 Novatours</p>
+        <div class="social-media">
+            <a href="#"><img src="../resources/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../resources/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="../resources/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
