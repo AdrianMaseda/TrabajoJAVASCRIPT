@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 noticiaElemento.classList.add("noticia");
                 
                 noticiaElemento.innerHTML = `
-                    <img src="${noticia.imagen}" alt="${noticia.titulo}">
                     <h3>${noticia.titulo}</h3>
                     <p><strong>Fecha:</strong> ${noticia.fecha}</p>
                     <p>${noticia.descripcion}</p>
+                    <img src="${noticia.imagen}" alt="${noticia.titulo}">
                 `;
                 
                 noticiasContainer.appendChild(noticiaElemento);
