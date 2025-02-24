@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         on: {
             init: function () {
-                actualizarBarraProgreso(this);
+                actualizarBarra(this);
             },
             slideChange: function () {
                 actualizarBarra(this);
