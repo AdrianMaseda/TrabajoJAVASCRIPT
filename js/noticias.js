@@ -2,7 +2,7 @@
     elemento en un bloque en el html. Se depositan en el contenedor 
     noticias-container */
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("../resources/noticias.xml") // Ruta al XML
+        fetch("TrabajoJAVASCRIPT/resources/noticias.xml") // Ruta al XML
             .then(response => response.text()) // Convertimos a texto
             .then(str => {
                 let parser = new DOMParser();

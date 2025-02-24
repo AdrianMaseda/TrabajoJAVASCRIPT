@@ -87,6 +87,7 @@ main {
 
 /* Estilo de la galería */
 .swiper-container {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 80%;
@@ -97,6 +98,8 @@ main {
 
 .swiper-wrapper {
     display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -115,20 +118,29 @@ main {
     transition: transform 0.3s ease-in-out;
 }
 
-#barra-progreso-container {
-    width: 20%;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.3);
+.swiper-pagination {
     position: absolute;
-    bottom: 10px;
-    left: 0;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Espaciado entre los puntos */
+    width: 100%;
 }
 
-#barra-progreso {
-    height: 100%;
-    width: 0;
-    background: #f4a261; /* Naranja complementario */
-    transition: width 0.3s ease-in-out;
+/* Estilo de los puntos de imagen */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f4a261;
 }
 
 /* Pie de página */

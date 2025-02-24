@@ -10,32 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
             delay: 3000, //Cambia cada 3 segundos
             disableOnInteraction: false, //Sigue operando aunque estemos, por ejemplo, en hover
         },
-        on: {
-            init: function (swiper) {
-                actualizarBarra(swiper);
-            },
-            slideChange: function (swiper) {
-                actualizarBarra(swiper);
-            }
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true, // Permite hacer clic en los puntos para cambiar de imagen
         }
     });
-
-    /*  Función para que se muestre un porcentaje de progresión en una barra debajo de las imágenes
-        de la galería.*/
-    function actualizarBarra(swiper) {
-
-        if (!swiper || !swiper.slides) return;
-
-        const barra = document.getElementById("barra-progreso");
-        if (!barra) return;
-
-        const totalSlides = swiper.slides.length - 2;
-        const indice = swiper.realIndex + 1;
-        const progreso = (indice / totalSlides) * 100;
-        barra.style.width = `${progreso}%`;
-    }
-    
-    actualizarBarra();
-
 });
 
