@@ -116,7 +116,7 @@ main {
 }
 
 #barra-progreso-container {
-    width: 100%;
+    width: 20%;
     height: 5px;
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
