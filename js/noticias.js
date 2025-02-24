@@ -2,7 +2,7 @@
     elemento en un bloque en el html. Se depositan en el contenedor 
     noticias-container */
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("noticias.json")
+    fetch("../resources/noticias.json")
         .then(response => response.json())
         .then(noticias => {
             const noticiasContainer = document.getElementById("noticias-container");
