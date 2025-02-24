@@ -38,19 +38,19 @@
                     <legend>Datos de Contacto</legend>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" maxlength="15"
-                        pattern="[A-Za-z]{1,15}" required>
+                        pattern="[A-Za-z]{1,15}" title="Debe contener un máximo de 15 letras" required>
                     
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" id="apellidos" name="apellidos" maxlength="40" 
-                        pattern="[A-Za-z ]{1,40}" required>
+                        pattern="[A-Za-z ]{1,40}" title="Debe contener un máximo de 40 letras" required>
                     
                     <label for="telefono">Teléfono:</label>
                     <input type="text" id="telefono" name="telefono" maxlength="9" 
-                        pattern="[0-9]{9}" required>
+                        pattern="[0-9]{9}" title="Debe contener 9 dígitos" required>
                     <br>
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" 
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ejemplo: adrian.masedasti@gmail.com" required>
                 </fieldset>
                 <!--Bloque de cálculo del precio-->
                 <fieldset>
