@@ -3,7 +3,7 @@
     noticias-container */
     document.addEventListener("DOMContentLoaded", function () {
         var request = new XMLHttpRequest();
-        request.open("GET", "noticias.xml", true);
+        request.open("GET", "resources/noticias.xml", true);
         request.onreadystatechange = function () {
             if (request.readyState === 4 && request.status === 200) {
                 let xml = request.responseXML;
