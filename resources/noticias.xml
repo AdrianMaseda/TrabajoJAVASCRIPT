@@ -5,27 +5,27 @@
         <fecha>2025-02-11</fecha>
         <descripcion>Nuestra empresa ha lanzado un nuevo modelo de viaje para poder disfrutar de una experiencia
             única y personalizada.</descripcion>
-        <imagen>resources/noticia1.jpg</imagen>
+        <imagen>noticia1.jpg</imagen>
     </noticia>
     <noticia>
         <titulo>Expansión Internacional</titulo>
         <fecha>2025-01-25</fecha>
         <descripcion>Anunciamos nuestra expansión a nuevos mercados internacionales este año,
             lo que nos proporcionará la habilidad de ofrecer nuevos servicios internacionales.</descripcion>
-        <imagen>resources/noticia2.jpg</imagen>
+        <imagen>noticia2.jpg</imagen>
     </noticia>
     <noticia>
         <titulo>Celebramos el fin de año</titulo>
         <fecha>2024-12-30</fecha>
         <descripcion>¡Celebra con nosotros el fin de año con ofertas especiales, regalos y mucho más!</descripcion>
-        <imagen>resources/noticia3.jpg</imagen>
+        <imagen>noticia3.jpg</imagen>
     </noticia>
     <noticia>
         <titulo>Presentamos nuestro proyecto</titulo>
         <fecha>2024-12-20</fecha>
         <descripcion>Estamos orgullosos de poder decir que por fin hemos podido arrancar con nuestro proyecto: ofrecer
             experiencias únicas en diferentes partes del mundo.</descripcion>
-        <imagen>resources/noticia4.jpg</imagen>
+        <imagen>noticia4.jpg</imagen>
     </noticia>
 </noticias>
 
