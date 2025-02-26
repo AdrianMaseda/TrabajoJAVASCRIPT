@@ -25,12 +25,15 @@ body {
 .header-container.scrolled {
     background-color: rgba(41, 74, 112, 0.1);
     padding: 10px 0;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; 
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out,
+                background-color 1s ease-in-out, padding 1s ease-in-out; 
 }
 
 .header-container.scrolled nav ul li a, .header-container.scrolled header{
     visibility: visible;
     color: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, 
+                color 1s ease-in-out;
 }
 
 /* Logo */
