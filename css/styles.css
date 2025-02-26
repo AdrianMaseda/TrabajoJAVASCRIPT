@@ -89,6 +89,66 @@ h3 {
     font-weight: normal;
 }
 
+/* Estilo de los formularios */
+form {
+    background: #ffffff;
+    padding: 20px 0 100px 0; /* Ajuste para evitar sobreposición*/
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+    color: #1e3a5f;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #294a70;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #f4a261;
+    box-shadow: 0px 0px 5px rgba(244, 162, 97, 0.5);
+}
+
+button {
+    background: #f4a261;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e68a4e;
+}
+
 /* Estilo de mapa */
 #mapa {
     border-radius: 8px;
