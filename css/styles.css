@@ -24,7 +24,8 @@ body {
 /* Clase agregada en cuanto nos desplazemos verticalmente en la web*/
 .header-container.scrolled {
     background-color: #162b45;
-    padding: 10px 0;    
+    padding: 10px 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; 
 }
 
 .header-container.scrolled nav ul li a, .header-container.scrolled header{
