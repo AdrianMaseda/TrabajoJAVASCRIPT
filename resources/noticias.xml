@@ -18,7 +18,7 @@
         <titulo>Celebramos el fin de año</titulo>
         <fecha>2024-12-30</fecha>
         <descripcion>¡Celebra con nosotros el fin de año con ofertas especiales, regalos y mucho más!</descripcion>
-        <imagen>noticia3.jpg</imagen>
+        <imagen>noticia3.jpg</imagen> 
     </noticia>
     <noticia>
         <titulo>Presentamos nuestro proyecto</titulo>
