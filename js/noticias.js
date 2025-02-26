@@ -29,7 +29,7 @@
             noticiaElemento.classList.add("noticia");
     
             noticiaElemento.innerHTML = `
-                <img src="${imagen}" alt="${titulo}">
+                <img src="resources/${imagen}" alt="${titulo}">
                 <h3>${titulo}</h3>
                 <p><strong>Fecha:</strong> ${fecha}</p>
                 <p>${descripcion}</p>
