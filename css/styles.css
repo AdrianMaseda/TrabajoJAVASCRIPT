@@ -159,6 +159,12 @@ button:hover {
     overflow: hidden;
 }
 
+#ruta{
+    position:relative;
+    float:left;
+    width:250px;
+}
+
 /* Estilo de la galería */
 .swiper-container {
     position: relative;

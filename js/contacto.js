@@ -19,6 +19,7 @@
         var directionsService = new google.maps.DirectionsService();
         var directionsRenderer = new google.maps.DirectionsRenderer();
         directionsRenderer.setMap(map);
+        directionsRenderer.setPanel(document.getElementById("ruta"));
     
         /*  Al hacer click en el botón, se utiliza la geolocalización para recoger la ubicación del usuario
             y proceder a crear una ruta en coche hasta la empresa.  */
@@ -33,11 +34,11 @@
                     var request = {
                         origin: userLocation,
                         destination: ubicacion,
-                        travelMode: 'DRIVING'
+                        travelMode: google.maps.DirectionsTravelMode.DRIVING
                     };
     
                     directionsService.route(request, function(result, status) {
-                        if (status == 'OK') {
+                        if (status == google.maps.DirectionsStatus.OK) {
                             directionsRenderer.setDirections(result);
                         } else {
                             alert('No se pudo calcular la ruta');
