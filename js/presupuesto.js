@@ -47,12 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
         return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
     }
 
+    //Entre 1 y 24 meses
+    function validarPlazo(plazo) {
+        return plazo >= 1 && plazo <= 24;
+    }
+
     function validarFormulario() {
         const esValido = 
             validarNombre(nombre.value) &&
             validarApellidos(apellidos.value) &&
             validarTelefono(telefono.value) &&
             validarEmail(email.value) &&
+            validarPlazo(parseInt(plazo.value)) &&
             condiciones.checked;
         
         submitButton.disabled = !esValido;
