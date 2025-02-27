@@ -3,7 +3,7 @@
     ventana. Se establece en coche.  */
     function initMap() {
         var ubicacion = { lat: 43.383, lng: -5.833 };
-        var map = new google.maps.Map(document.getElementById("mapa"), {
+        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 13,
             center: ubicacion
         });
