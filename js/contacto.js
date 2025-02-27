@@ -2,53 +2,48 @@
     marcador en la misma. Se crea un servicio de dirección y se traza la ruta al cargar la
     ventana. Se establece en coche.  */
     function initMap() {
-        var ubicacion = { lat: 43.383, lng: -5.833 };
+
+        //Se crea el mapa con la ubicacion de la empresa en el centro
+        var ubicacion = { lat: 43.382156, lng: -5.814776 };
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 13,
-            center: ubicacion
-        });
-    
-        var marker = new google.maps.Marker({
-            position: ubicacion,
-            map: map,
-            title: "Nuestra Empresa - La Media Legua 20, Oviedo"
+            center: ubicacion,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         });
     
         //Creación del servicio de trazado de ruta
         var directionsService = new google.maps.DirectionsService();
         var directionsRenderer = new google.maps.DirectionsRenderer();
         directionsRenderer.setMap(map);
+        directionsRenderer.setPanel(document.getElementById("ruta"));
     
         function trazarRuta() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    var userLocation = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
+            //Se recoge la ubicación del navegador del cliente
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                console.log(ubicacion);
+                console.log(userLocation);
+                //Se crea ruta desde la ubicacion del usuario hasta la empresa
+                var request = {
+                    origin: userLocation,
+                    destination: ubicacion,
+                    travelMode: google.maps.DirectionsTravelMode.DRIVING
+                };
     
-                    var request = {
-                        origin: userLocation,
-                        destination: ubicacion,
-                        travelMode: 'DRIVING'
-                    };
-    
-                    directionsService.route(request, function(result, status) {
-                        if (status == 'OK') {
-                            directionsRenderer.setDirections(result);
-                        } else {
-                            alert('No se pudo calcular la ruta');
-                        }
-                    });
-                },function() {  //Si no se pudo obtener la ubicación del usuario, se lanza un alert.
-                    alert("No se pudo obtener tu ubicación");
+                directionsService.route(request, function(result, status) {
+                    if (status == google.maps.DirectionsStatus.OK) {
+                        directionsRenderer.setDirections(result);
+                    } else {
+                        alert('No se pudo calcular la ruta');
+                    }
                 });
-            } else {
-                alert("Tu navegador no soporta la geolocalización");
-            }
+            });
         }
-    
+
         trazarRuta(); // Ejecutar la función automáticamente al cargar la página
     }
-    
+
     window.onload = initMap;
